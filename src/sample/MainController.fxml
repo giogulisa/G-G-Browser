@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="700.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="444.0">
+                     <children>
+                        <Button layoutX="664.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnEnter" text="Enter" />
+                        <TextField fx:id="url" layoutX="201.0" layoutY="14.0" prefHeight="25.0" prefWidth="444.0" promptText="url" />
+                        <Button onAction="#btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;--" />
+                        <Button layoutX="72.0" layoutY="14.0" mnemonicParsing="false" text="--&gt;" />
+                        <Button layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="Reload" />
+                        <WebView onMouseClicked="#urladd" fx:id="webview" layoutX="14.0" layoutY="62.0" prefHeight="603.0" prefWidth="726.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
