@@ -26,6 +26,9 @@ public class Controller {
         } catch (Exception e) {
             System.out.println(e);
         }
+        if(urls1.size()>0 && urls1.get(urls1.size()-1) != webview.getEngine().getLocation()){
+            urls1.clear();
+        }
     }
     public void btnBack(ActionEvent actionEvent){
         if (urls.size()<=1 || counter <=0){
