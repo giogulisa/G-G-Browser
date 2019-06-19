@@ -72,9 +72,14 @@ public class Controller {
         }
     }
     public void urladd(){
+        System.out.println(urls1);
         if (urls.get(urls.size() - 1) != webview.getEngine().getLocation()){
             counter+=1;
             urls.add(webview.getEngine().getLocation());
         }
+        if(urls1.size()>0 && urls1.get(urls1.size()-1) != webview.getEngine().getLocation()){
+            urls1.clear();
+        }
+
     }
 }
