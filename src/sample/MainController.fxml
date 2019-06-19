@@ -20,7 +20,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <TabPane prefHeight="700.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="700.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Untitled Tab 1">
             <content>
@@ -28,17 +28,12 @@
                      <children>
                         <Button layoutX="664.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnEnter" text="Enter" />
                         <TextField fx:id="url" layoutX="201.0" layoutY="14.0" prefHeight="25.0" prefWidth="444.0" promptText="url" />
-                        <Button onAction="#btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;--" />
-                        <Button layoutX="72.0" layoutY="14.0" mnemonicParsing="false" text="--&gt;" />
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBack" text="&lt;--" />
+                        <Button layoutX="72.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnForward" text="--&gt;" />
                         <Button layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="Reload" />
-                        <WebView onMouseClicked="#urladd" fx:id="webview" layoutX="14.0" layoutY="62.0" prefHeight="603.0" prefWidth="726.0" />
+                        <WebView fx:id="webview" layoutX="14.0" layoutY="62.0" onMouseClicked="#urladd" prefHeight="603.0" prefWidth="830.0" />
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Untitled Tab 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
         </tabs>
