@@ -30,7 +30,7 @@
                         <TextField fx:id="url" layoutX="201.0" layoutY="14.0" prefHeight="25.0" prefWidth="444.0" promptText="url" />
                         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBack" text="&lt;--" />
                         <Button layoutX="72.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnForward" text="--&gt;" />
-                        <Button layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="Reload" />
+                        <Button onAction="#btnReload" layoutX="125.0" layoutY="14.0" mnemonicParsing="false" text="Reload" />
                         <WebView fx:id="webview" layoutX="14.0" layoutY="62.0" onMouseClicked="#urladd" prefHeight="603.0" prefWidth="830.0" />
                      </children>
                   </AnchorPane>

@@ -80,6 +80,13 @@ public class Controller {
         if(urls1.size()>0 && urls1.get(urls1.size()-1) != webview.getEngine().getLocation()){
             urls1.clear();
         }
-
+    }
+    public void btnReload (ActionEvent actionEvent){
+        try {
+            WebEngine engine = webview.getEngine();
+            engine.reload();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
